@@ -15,3 +15,11 @@ body{
     display: flex;
     width: 90vw;
 }
+
+.panel {
+    background-size: cover;
+    background-posisiton: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 10px;
+}
