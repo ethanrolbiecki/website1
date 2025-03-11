@@ -1,6 +1,8 @@
 
 body{
-    background-color: ffffff;
+    justify-content: flex;
+    align-items: center;
+
 }
 .click{
     width: 280px;
@@ -9,5 +11,13 @@ body{
     left: 20px;
     padding: 10px;
     background-color: #999393;
+    text-align: center;
+
+}
+.amount {
+    width: 300px;
+    height: 90px;
+    padding: 10px;
+    background-color:  #999393;
     text-align: center;
 }
