@@ -4,10 +4,10 @@ body{
 }
 .click{
     width: 280px;
-    height: 100px;
+    height: 75px;
     down: 20px;
     left: 20px;
     padding: 10px;
     background-color: #999393;
-    justify: center;
+    text-align;
 }
