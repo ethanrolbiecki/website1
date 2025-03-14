@@ -4,7 +4,8 @@ const sounds = ['applause','boo','gasp','tada',
 sounds.forEach(sound => {
     const btn = document.createElement('button')
     btn.classList.add('btn')
-    btn.innerHTLM = sound
+    console.log(btn)
+    btn.innerHTML = sound
     btn.addEventListener('click', ()=> {
         stopSongs()
         document.getElementById(sound).play()

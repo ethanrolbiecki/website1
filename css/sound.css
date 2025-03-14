@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -12,5 +14,20 @@ body {
 }
 
 .btn{
-    
+    font-family: "Big Shoulders", sans-serif;
+    background-color: rebeccapurple;
+    margin: 10px;
+    color: rgb(255,255,255);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+.btn:focus {
+    outline: none;
 }
