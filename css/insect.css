@@ -1,2 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap')
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(200,200,200);
+    color: white
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100vh;
+    text-align: center
+}
