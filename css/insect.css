@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
 
 * {
     box-sizing: border-box;
@@ -40,9 +40,23 @@ h1 {
 }
 
 .insects-list {
-    display: flex
+    display: flex;
     flex-wrap: wrap;
     justify-contents: center;
     list-style-type: none;
     padding: 0;
+}
+
+.insects-list li{
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
 }
