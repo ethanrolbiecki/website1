@@ -64,5 +64,5 @@ function getRandomLocation(){
 
 insect.addEventListener('click', ()=> {
     score = score + 1
-    scoreEl.innerHTML = score
+    scoreEl.innerHTML = `Score: ${score}`
 })
