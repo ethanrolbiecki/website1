@@ -66,7 +66,7 @@ insect.addEventListener('click', ()=> {
 
 function catchInsect ( ) {
     increaseScore()
-    this
+    this.classList.add('caught')
 }
 
 function increaseScore(){
