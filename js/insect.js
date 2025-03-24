@@ -80,3 +80,8 @@ function increaseScore(){
     score = score + 1
     scoreEl.innerHTML = `Score: ${score}`
 }
+
+if (score = 10) {
+
+    message.classList.add("visible")
+}
