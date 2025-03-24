@@ -11,6 +11,7 @@ body {
     color: white
     height: 100vh;
     text-align: center
+    overflow: hidden;
 }
 
 h1 {
