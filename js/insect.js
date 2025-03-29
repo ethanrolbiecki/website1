@@ -18,9 +18,9 @@ choose_insects_btns.forEach(btn => {
         screens[1].classList.add('up')
         const img = btn.querySelector('img')
         const src = img.getAttribute('src')
-        const alt = img.getAtrribute('alt')
+        const alt = img.getAttribute('alt')
         selected_insect = {src, alt}
-        StartGame()
+        startGame()
         createInsect()
     })
 })
@@ -45,13 +45,15 @@ function increaseTime() {
 }
 
 function createInsect(){
+
     const insect = document.createElement('div')
     insect.classList.add('insect')
-    insect.innerHTML = `<img src = "${selected_insect.src}" alt = "${selected_insect.alt}>`
+    insect.innerHTML = `<img src = "${selected_insect.src}" alt = "${selected_insect.alt}">`
     const {x, y} = getRandomLocation()
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
     game_container.appendChild(insect)
+    insect.addEventListener('click', catchInsect);
 }
 
 function getRandomLocation(){
@@ -62,7 +64,7 @@ function getRandomLocation(){
     return {x, y}
 }
 
-insect.addEventListener('click', catchInsect)
+//insect.addEventListener('click', catchInsect);
 
 function catchInsect ( ) {
     increaseScore()
@@ -78,7 +80,7 @@ function catchInsect ( ) {
 
 function increaseScore(){
     score = score + 1
-    
+
     scoreEl.innerHTML = `Score: ${score}`
 
     if (score == 10){
