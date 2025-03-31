@@ -1,11 +1,48 @@
 body {
     display: flex;
+    inline: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
+/*.background {
+    background-image: url("mainpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(255,255,255);
+    position: relative;
+    z-index: -1;
 
+}  I WANTED TO MAKE A BACKGROUND BUT ITS LITERALLY NOT WORKING RIGHT
+    */
+.welcome {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255,255,255)
+
+
+}
+.welcome h3 {
+    font-size: 50px;
+
+}
+.container {
+    display: flex;
+
+}
 .ClickList {
     display: flex;
     justify-content: center;
@@ -16,6 +53,10 @@ body {
     align-items: center;
 }
 
+.ClickList:hover {
+    background-color: rgb(30,30,30)
+}
+
 h3 {
     color: white;
     text-align: center;
@@ -23,11 +64,7 @@ h3 {
 }
 
 .dih {
-    display: none;  /* Initially hidden */
-
-    position: absolute;
-    right : 5px
-
+    display: none;
 }
 
 .dih.active {
@@ -35,7 +72,8 @@ h3 {
     background-color: black;
     width: 300px;
     padding: 10px;
-    text-align: center;
+    /*z-index: 8;*/
+
 }
 
 a {
@@ -44,5 +82,5 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: rgb(200,200,200);
 }
