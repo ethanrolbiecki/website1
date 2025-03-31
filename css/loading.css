@@ -2,6 +2,26 @@
 {
     box-sizing:border-box;
 }
+.welcome {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255,255,255)
+
+}
+a {
+    text-decoration: none;
+    color : white;
+}
+a:hover {
+    color : rgba(200,200,200)
+}
+
 
 body {
     display: flex;
