@@ -6,7 +6,7 @@ let ballXPosition = windowWidth/2 - ballRadius
 let BallSpeed = 5
 let ballXDirection = 1
 
-setInvertalval(moveBall, 10)
+setInterval(moveBall(), 10)
 
 function moveBall() {
     ball.style.left = ballXPosition + BallSpeed * ballXDirection
