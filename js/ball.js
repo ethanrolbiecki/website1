@@ -1,4 +1,5 @@
 const ball = document.createElement('div')
+const ballRadius = 30
 
 function createBall(){
     document.body.appendChild(ball)
