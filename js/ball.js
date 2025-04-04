@@ -3,8 +3,9 @@ const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
+setInvertalval(moveBall, 10)
 function moveBall() {
-    ball.style.left = 
+    ball.style.left =
 }
 createBall()
 
