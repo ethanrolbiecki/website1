@@ -14,6 +14,7 @@ function moveBall() {
     if (ballXPosition > windowWidth ){
         ballXDirection = ballXDirection * -1
     }
+    if (ballXPosition < )
 }
 createBall()
 
