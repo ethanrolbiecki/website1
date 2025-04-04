@@ -4,12 +4,16 @@ const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 let ballXPosition = windowWidth/2 - ballRadius
 let BallSpeed = 5
+let ballXDirection = 1
 
 setInvertalval(moveBall, 10)
 
 function moveBall() {
-    ball.style.left = ballXPosition + BallSpeed
+    ball.style.left = ballXPosition + BallSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
+    if (ballXPosition > windowWidth ){
+        ballXDirection = ballXDirection * -1
+    }
 }
 createBall()
 
