@@ -52,9 +52,9 @@ create LPadel() {
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
-        LPadel.style.top =
+        LPadelYPostition = LPadelUPosition - LPadelSpeed
     }
     if (event.key == 's'){
-
+        LPadelYPosition = LPadelYPosition + LPadelSpeed
     }
 })
