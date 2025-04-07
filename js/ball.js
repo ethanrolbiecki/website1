@@ -50,4 +50,11 @@ create LPadel() {
     LPadel.style.top = `{windowHeight / 2 - LPadelHeight/ 2}px`
 }
 
-LPadel.addEventListener('arrowkeydown')
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        LPadel.style.top =
+    }
+    if (event.key == 's'){
+
+    }
+})
