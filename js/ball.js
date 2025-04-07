@@ -59,4 +59,5 @@ document.addEventListener('keyup', (event) => {
     if (event.key == 's'){
         LPadelYPosition = LPadelYPosition + LPadelSpeed
     }
+    LPadel.style.top
 })
