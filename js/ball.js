@@ -61,6 +61,10 @@ document.addEventListener('keyup', (event) => {
         }
     }
     if (event.key == 's'){
+        if (LPadelYPosition >= windowHeight - LPadelHeight) {
+            LPadelYPostion = windowHeight - LPadelHeight
+        }
+        else {
         LPadelYPosition = LPadelYPosition + LPadelSpeed
     }
     LPadel.style.top = `{LPadelYPostition}px`
