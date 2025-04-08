@@ -65,6 +65,20 @@ create LPadel() {
     LPadel.style.top = `{LPadelYPosition}px`
 }
 
+
+
+wKey = false
+sKey = false
+
+
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'w') {
+        wKey = true
+    }
+    if (event.key == 's') {
+        sKey = true
+    }
+
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
         if (LpadelYposition < 0 ) {
