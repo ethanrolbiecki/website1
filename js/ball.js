@@ -7,6 +7,7 @@ const windowWidth = window.innerWidth
 let LPadelWidth = 20
 let lPadelHeight = 100
 let LPadelYPosition = windowHeight / 2 - LPadelHeight/
+let LPadelXPosition = 
 const ballRadius = 30
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
