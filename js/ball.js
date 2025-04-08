@@ -7,7 +7,7 @@ const windowWidth = window.innerWidth
 let LPadelWidth = 20
 let lPadelHeight = 100
 let LPadelYPosition = windowHeight / 2 - LPadelHeight/
-let LPadelXPosition = 
+let LPadelXPosition =
 const ballRadius = 30
 let ballXPosition = windowWidth/2 - ballRadius
 let ballYPosition = windowHeight/2 - ballRadius
@@ -33,6 +33,13 @@ function moveBall() {
     let LPaddleTop = LPaddleYPosition
     Let LPaddleBottom = LPaddleYPosition + LPaddleHeight
     Let LpaddleRight = LPaddleXposition + LPaddleWidth
+
+    if(
+        (ballBottom >= LPaddleTop) &&
+        (ballTop <= LPaddleBottom) &&
+        (ballLeft <= LPaddleRight) &&
+        (ballXDirection == -1)
+    )
 }
 createBall()
 
