@@ -87,24 +87,13 @@ document.addEventListener('keyup', (event) => {
         sKey = false
     }
 
-
-
-
-document.addEventListener('keyup', (event) => {
-    if (event.key == 'w') {
-        if (LpadelYposition < 0 ) {
-            LPadelYPostion = 0
-            else {
-                LPadelYPostition = LPadelUPosition - LPadelSpeed
-            }
-        }
+fucntion moveLPaddle() {
+    if (wKey == true && LPaddleYPostition > 0 ) {
+        LPaddleYPosition = LPaddleYposition - LPaddleSpeed
     }
-    if (event.key == 's'){
-        if (LPadelYPosition >= windowHeight - LPadelHeight) {
-            LPadelYPostion = windowHeight - LPadelHeight
-        }
-        else {
-        LPadelYPosition = LPadelYPosition + LPadelSpeed
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight) {
+        LpaddleYpositon = LpaddleYPosition + LPaddleSpeed
     }
-    LPadel.style.top = `{LPadelYPostition}px`
-})
+    LpPaddle.style.top = `${LpaddleYPosition}px`
+}
+
