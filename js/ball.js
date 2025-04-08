@@ -81,6 +81,17 @@ document.addEventListener('keydown', (event) => {
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
+        wKey = false
+    }
+    if (event.key == 's') {
+        sKey = false
+    }
+
+
+
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
         if (LpadelYposition < 0 ) {
             LPadelYPostion = 0
             else {
