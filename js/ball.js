@@ -16,6 +16,7 @@ let ballXDirection = 1
 
 let score = 0 // display the score and increase the score by 1 every time ball hit paddle
 let level = 1 // display level and increa the level by one every time the score increases by 10
+ // as the level increases, inceas the ball speed 
 
 setInterval(moveBall(), 10)
 
