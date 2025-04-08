@@ -14,6 +14,9 @@ let ballYPosition = windowHeight/2 - ballRadius
 let BallSpeed = 5
 let ballXDirection = 1
 
+let score = 0 // display the score and increase the score by 1 every time ball hit paddle
+let level = 1 // display level and increa the level by one every time the score increases by 10
+
 setInterval(moveBall(), 10)
 
 function moveBall() {
