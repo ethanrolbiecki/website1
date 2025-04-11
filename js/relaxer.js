@@ -17,8 +17,8 @@ function breathAnimation() {
   }, 4500);
 }
 
-// Run once on start
+
 breathAnimation();
 
-// Then repeat every 7.5 seconds
+
 setInterval(breathAnimation, 7500);

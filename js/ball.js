@@ -81,7 +81,7 @@
     ball.style.left = `${ballXPosition}px`;
     ball.style.top = `${ballYPosition}px`;
 
-    // Bounce off top and bottom walls
+   
     if (ballYPosition <= 0 || ballYPosition >= windowHeight - 2 * ballRadius) {
       ballYDirection *= -1;
     }
@@ -89,7 +89,7 @@
     // Bounce off right wall
     if (ballXPosition >= windowWidth - 2 * ballRadius) {
       ballXDirection *= -1;
-      ballXPosition = windowWidth - 2 * ballRadius; // keep inside right wall
+      ballXPosition = windowWidth - 2 * ballRadius;
     }
 
     // Paddle collision
@@ -107,7 +107,7 @@
       ballXDirection < 0
     ) {
       ballXDirection *= -1;
-      ballXPosition = LPaddleRight; // keep it from getting stuck inside paddle
+      ballXPosition = LPaddleRight; 
       updateScoreAndLevel();
       document.querySelector('.scoreBoard').innerText = `Score: ${score} | Level: ${level}`;
     }
