@@ -1,21 +1,24 @@
-const cotainer = document.getElementById('container')
-const text = document.getElementById('text')
+const container = document.getElementById('container');
+const text = document.getElementById('text');
 
 function breathAnimation() {
-    text.innerHTML = 'Breath In'
-    container.classList.add('grow')
+  text.innerHTML = 'Breathe In';
+  container.classList.add('grow');
+  container.classList.remove('shrink');
 
-   setInterval(breathAnimation(), 7500)
+  setTimeout(() => {
+    text.innerHTML = 'Hold';
+  }, 3000);
 
-    setTimeout(( )= > {
-        text.innerHTML = 'Hold'
-    } , 3000)
-
-    setTimeout(()=> {
-
-        text.innerHTML = 'Breathe Out!'
-        container.classList.remove('grow')
-        container.classList.add('shrink')
-    },4500)
+  setTimeout(() => {
+    text.innerHTML = 'Breathe Out!';
+    container.classList.remove('grow');
+    container.classList.add('shrink');
+  }, 4500);
 }
 
+// Run once on start
+breathAnimation();
+
+// Then repeat every 7.5 seconds
+setInterval(breathAnimation, 7500);
