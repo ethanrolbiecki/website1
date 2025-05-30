@@ -6,17 +6,17 @@ const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
 
 const data = [
-    { image: "drink.jpg", text: "I'm Thirsty" },
-    { image: 'food.jpg', text: "I'm Hungry" },
-    { image: 'tired.jpg', text: "I'm Tired" },
-    { image: 'hurt.jpg', text: "I'm Hurt" },
-    { image: 'happy.jpg', text: "I'm Happy" },
-    { image: 'angry.jpg', text: "I'm Angry" },
-    { image: 'sad.jpg', text: "I'm Sad" },
-    { image: 'scared.jpg', text: "I'm Scared" },
-    { image: 'outside.jpg', text: "I Want To Go Outside" },
-    { image: 'home.jpg', text: 'I Want To Go Home' },
-    { image: 'school.jpg', text: 'I Want To Go To School' },
+    { image: "js/drink.jpg", text: "I'm Thirsty" },
+    { image: 'js/food.jpg', text: "I'm Hungry" },
+    { image: 'js/tired.jpg', text: "I'm Tired" },
+    { image: 'js/hurt.jpg', text: "I'm Hurt" },
+    { image: 'js/happy.jpg', text: "I'm Happy" },
+    { image: 'js/angry.jpg', text: "I'm Angry" },
+    { image: 'js/sad.jpg', text: "I'm Sad" },
+    { image: 'js/scared.jpg', text: "I'm Scared" },
+    { image: 'js/outside.jpg', text: "I Want To Go Outside" },
+    { image: 'js/home.jpg', text: 'I Want To Go Home' },
+    { image: 'js/school.jpg', text: 'I Want To Go To School' },
     { image: 'grandma.jpg', text: "I Want To Go to Grandmas" }
 ];
 
